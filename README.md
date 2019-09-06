@@ -19,6 +19,15 @@ N_points #Number of dosages administered before witnessing first death
 
 Usage: python dosage.py <file_name> <number_died> <total_number> <time_period> <dosage_conc> <dosage_points>
 
+Please input the following for an example run -
+
+Survival file is given as acute_toxicity.csv
+Number of mice which died during multi-dose experiment = 2
+Total number of mice which were used during multi-dose experiment = 6
+Time period of dosage = 3
+Concentration of dosage = 64
+Number of dosages administered before witnessing first death = 5
+
 Copyright (c) <2019> <Preetham Venkatesh>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
