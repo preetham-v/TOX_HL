@@ -5,11 +5,11 @@ TOXHL involves 3 experiments: an acute toxicity experiment, a cumulative toxicit
 
 survival_file #File which contains data on Survival vs conc
 
-crit_died #Number of mice which died during time-spaced experiment
+crit_died #Number of mice which died during multi-dose experiment
 
-crit_total  #Total number of mice which were used during time-spaced experiment
+crit_total  #Total number of mice which were used during multi-dose experiment
 
-conc_point  #Fraction of mice which died during time-spaced experiment
+conc_point  #Fraction of mice which died during multi-dose experiment
 
 time_period  #Time period of dosage
 
