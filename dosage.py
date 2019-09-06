@@ -9,10 +9,10 @@ if len(sys.argv)!=7:
     print("Usage: "+sys.argv[0]+"python dosage.py <file_name> <number_died> <total_number> <time_period> <dosage_conc> <dosage_points>")
     sys.exit()
     
-survival_file = sys.argv[1] #File which contains data on Survival vs conc
-crit_died = float(sys.argv[2]) #Number of mice which died during time-spaced experiment
-crit_total = float(sys.argv[3]) #Total number of mice which were used during time-spaced experiment
-conc_point = float(crit_died/crit_total) #Fraction of mice which died during time-spaced experiment
+survival_file = sys.argv[1] #File which contains data on conc vs survival
+crit_died = float(sys.argv[2]) #Number of mice which died during multi-dose experiment
+crit_total = float(sys.argv[3]) #Total number of mice which were used during multi-dose experiment
+conc_point = float(crit_died/crit_total) #Fraction of mice which died during multi-dose experiment
 time_period = int(sys.argv[4]) #Time period of dosage
 conc_dosage = float(sys.argv[5]) #Concentration of dosage
 N_points = float(sys.argv[6]) #Number of dosages administered before witnessing first death
@@ -37,7 +37,7 @@ index_curr = 0 #Denotes the second index for linear interpolation
 buff_curr = 0
 buff_prev = 0
 flag = 0 #Used to mark the first time when conc_point lies on linear graph
-count_total = float(point_list[0][1]) #Total number of mice used in survival vs conc experiment
+count_total = float(point_list[0][1]) #Total number of mice used in conc vs survival experiment
 
 for j in range(0,len(point_list)):
     buff_curr = j
